@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Bookings_Functionals]">
+  <listeners>
+    <listener class-name="Booking.ListnerMain"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Booking.ListenerClass2">
+        <methods>
+          <include name="Class2_testcase1"/>
+        </methods>
+      </class> <!-- Booking.ListenerClass2 -->
+      <class name="Booking.ListnerClass1">
+        <methods>
+          <include name="Class_testcase2"/>
+        </methods>
+      </class> <!-- Booking.ListnerClass1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Bookings_Functionals] -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bookings_Functionals">
+  <test thread-count="5" name="Test">
+  <parameter name="URL" value="https://www.spicejet.com/"></parameter>
+  <parameter name="Username" value="abcd"></parameter>
+  <parameter name="Password" value="1234"></parameter>
+    <classes>
+    <class name="Booking.PmtDp"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Bookings_Functionals -->
